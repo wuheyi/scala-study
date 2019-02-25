@@ -1,4 +1,4 @@
-package org.why.study
+package org.why.study.implict
 
 /**
   * Created by wuheyi on 2018/12/22.
@@ -50,20 +50,14 @@ object ImplictStudy {
       println(ev.sort(data).mkString(","))
     }
     val mapStringDouble = Map("aaa" -> 1.1, "bbb" -> 2.2, "ccc" -> 0.1)
-    import Algo.AlgoStringDouble._
+    import org.why.study.implict.Algo.AlgoStringDouble.sort
     algoSort(mapStringDouble)
-
-    import Algo.AlgoStringInt._
     val mapStringInt = Map("aaa" -> 1, "bbb" -> 2, "ccc" -> 0)
+    import org.why.study.implict.Algo.AlgoStringInt.sort
     algoSort(mapStringInt)
-
-    import Info.AlgoStringInfo._
     val matStringInfo = Map("aaa" -> Info("", "", 1), "bbb" -> Info("", "", 1))
+    import org.why.study.implict.Info.AlgoStringInfo.sort
     algoSort(matStringInfo)
-
-
-
-
 
   }
 
